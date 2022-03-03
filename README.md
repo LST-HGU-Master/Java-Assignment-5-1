@@ -1,14 +1,34 @@
-# Autograding Example: Java
-This example project is written in Java, and tested with Gradle/JUnit.
+# 課題 5-1: メソッドの呼び出しと引数
 
-### The assignment
-The tests are currently failing because of an output mismatch. Fixing the `System.out.println` in the main method will make the tests green.
+### 課題の説明
+次の2つのメソッドを定義し、実行例にあるようにmainメソッドから呼び出しを行う。
+ただし、電話をかける人の名前と電話番号は実行時引数で与えること。
 
-### Setup command
-N/A
+| メソッド名        | 戻り値の型 | 引数リスト                                    | 処理内容                      |
+|--------------| --- |------------------------------------------|---------------------------|
+| printMyName  | なし | なし                                       | "生命太郎です"と表示する            | 
+| makeCall     | なし | 名前 (String name) と 電話番号 String telNumber | "Aさんの番号xxxxに電話をかけます"と表示する | 
 
-### Run command
-`gradle test`
 
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
+### プログラムの雛形
+```java
+public class Prog51 {
+
+	public static void main(String[] args) {
+		String name = args[0];
+		String telNumber = args[1];
+        
+		// メソッドの呼び出しを追加
+		
+	}
+    
+	// メソッドの定義を追加
+	
+}
+```
+
+### 実行例
+```
+生命太郎です
+生命花子さんの電話番号000-1111-2222に電話をかけます
+```
